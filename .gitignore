@@ -3,3 +3,7 @@
 ################################################################################
 
 /.vs
+/paylocityui/.vscode/tasks.json
+/paylocityui/.vscode/launch.json
+/paylocityui/.vscode/extensions.json
+/paylocityui/.vscode
