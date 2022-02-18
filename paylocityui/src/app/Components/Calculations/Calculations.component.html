@@ -1,0 +1,72 @@
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card bg-light ">
+    
+  <div class="container col-4">
+    <div class="card bg-light ">
+      <div class="card-header">Employee Details</div>
+      <div class="card-body">
+        <div class="row">
+          <label class="col">Emplyee Name</label>
+          <div class="col"><input [(ngModel)]="employeeName"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light ">
+      <div class="card-header">Dependent Details</div>
+      <div class="card-body">
+        <div class="row">
+          <label class="col">1st Dependent Name</label>
+          <div class="col"><input [(ngModel)]="dependentName1"></div>
+        </div>
+        <div class="row">
+          <label class="col">2nd Dependent Name</label>
+          <div class="col"><input [(ngModel)]="dependentName2"></div>
+        </div>
+        <div class="row">
+          <label class="col">3rd Dependent Name</label>
+          <div class="col"><input [(ngModel)]="dependentName3"></div>
+        </div>
+        <div class="row">
+          <label class="col">4rd Dependent Name</label>
+          <div class="col"><input [(ngModel)]="dependentName4"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="card border-0">
+      <button type="button" class="btn btn-warning float-right" style="width: 100px; " (click) = "Calculate()"> Calculate</button>
+
+    </div>
+    <div class="card bg-light ">
+      <div class="card-header">Cost To Company</div>
+      <div class="card-body">
+        <div class="row">
+          <label class="col">EmployeeId</label>
+          <label class="col">{{employeeCost.employeeId}}</label>
+        </div>
+        <div class="row">
+          <label class="col">Annual Salary</label>
+          <label class="col">{{employeeCost.salary}}</label>
+        </div>
+        <div class="row">
+          <label class="col">Annual Benefits</label>
+          <label class="col">{{employeeCost.benefits}}</label>
+        </div>
+        <div class="row">
+          <label class="col">Cost To Company</label>
+          <label class="col">{{employeeCost.costToCompany}}</label>
+        </div>
+      </div>
+    </div>
+    <div class="card border-0">
+      <div class="row">
+        <button type="button" class="btn btn-warning float-right" style="width: 120px; " (click) = "Save()"> Save</button>
+        <button type="button" routerLink="/employees" class="btn btn-warning float-right" style="width: 120px; " > Employees</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

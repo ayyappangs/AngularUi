@@ -15,6 +15,11 @@ export class Dependent {
 
 export class EmployeeCostToCompany {
   employeeId: number;
+  employeeName: string;
+  dependentName1: string;
+  dependentName2: string;
+  dependentName3: string;
+  dependentName4: string;
   salary: number;
   benefits: number;
   costToCompany: number;
